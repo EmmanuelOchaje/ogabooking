@@ -36,7 +36,7 @@ const Navbar = () => {
             >
               ogabooking
             </Link>
-            <div className="bg-lime-400 rounded-lg p-[3px] mb-3 lg:mb-5">
+            <div className="bg-lime-400 rounded-lg border-2 border-[#308806] p-1 mb-3 lg:mb-5">
               <Image src={plane} className="w-2 lg:w-3" alt="" />
             </div>
           </div>

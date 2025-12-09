@@ -8,7 +8,7 @@ import React from "react";
 
 const TripSelector = () => {
   return (
-    <div className="bg-white p-4 mx-auto md:p-8 lg:p-10 pb-5 w-full md:w-fit rounded-">
+    <div className="bg-white p-4 mx-auto md:p-8 lg:p-10 pb-5 w-full md:w-fit md:rounded-xl">
       {/* trip type */}
       <div className="flex gap-1 mb-4 overflow-x-auto">
         <button className="px-3 md:px-6 text-xs md:text-normal py-2 rounded-full transition-colors whitespace-nowrap text-gray-600 bg-gray-100">
