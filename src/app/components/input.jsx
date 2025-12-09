@@ -40,12 +40,12 @@ const Input = ({ trip }) => {
             <p className="py-1 text-center text-sm rounded-lg focus:outline-none">
               Sat, 06 Dec 2025
             </p>
-            <div className="flex gap-4">
+            <div className="flex">
               <button className="p-1 rounded">
-                <ChevronLeft className="w-4 h-4" />
+                <ChevronLeft className="w-4 h-4 text-[#56cc1c]" />
               </button>
               <button className="p-1 rounded">
-                <ChevronRight className="w-4 h-4" />
+                <ChevronRight className="w-4 h-4 text-[#56cc1c]" />
               </button>
             </div>
           </div>
