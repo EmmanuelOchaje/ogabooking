@@ -10,7 +10,7 @@ import Input from "./input";
 const TripSelector = () => {
   const [trip, setTrip] = useState("one-way");
   return (
-    <div className="bg-white p-4 mx-auto md:p-8 lg:p-10 pb-5 w-full md:w-fit md:rounded-xl">
+    <div className="bg-white p-4 mx-auto md:p-8 lg:p-10 pb-5 lg:w-5xl md:w-fit md:rounded-xl">
       {/* trip type */}
       <div className="flex gap-1 mb-4 overflow-x-auto">
         <button

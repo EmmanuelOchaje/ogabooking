@@ -42,24 +42,38 @@ const Navbar = () => {
           </div>
 
           {/* desktop */}
-          <div className="hidden lg:flex items-center gap-6">
+          <div className="hidden text-sm font-semibold lg:flex items-center gap-6">
             <div
               className={`flex items-center gap-4 ${
                 scrolled ? "text-gray-700" : "text-white"
               }`}
             >
-              <Image src={nig} className="w-5 h-3" alt="Nigerian flag" />
-              <span>EN</span>
-              <span>NGN</span>
+              <Image
+                src={nig}
+                className="w-5 h-3 cursor-pointer"
+                alt="Nigerian flag"
+              />
+              <span className="cursor-pointer border-r-2 border-l-2 px-2">
+                EN
+              </span>
+              <span className="cursor-pointer">NGN</span>
             </div>
-            <button className={scrolled ? "text-gray-700" : "text-white"}>
+            <button
+              className={`cursor-pointer ${
+                scrolled ? "text-gray-700" : "text-white"
+              }`}
+            >
               Support
             </button>
-            <button className={scrolled ? "text-gray-700" : "text-white"}>
+            <button
+              className={`${
+                scrolled ? "text-gray-700" : "text-white"
+              } cursor-pointer`}
+            >
               My Trips
             </button>
             <button
-              className={`px-6 py-2 border-2 rounded-full ${
+              className={`px-6 py-2 border-2 cursor-pointer rounded-full ${
                 scrolled
                   ? "border-gray-700 text-gray-600"
                   : "border-white text-white"

@@ -10,12 +10,13 @@ const Input = ({ trip }) => {
   return (
     <div>
       <div className="flex flex-col md:flex-row gap-3 mb-2">
-        <div className="p-2 md:p-3 rounded-xl hover:border-black cursor-pointer border-gray-100 border relative flex-1">
+        {/* from */}
+        <div className="p-2 md:p-3 rounded-xl w-fit hover:border-black cursor-pointer border-gray-100 border relative flex-1">
           <label className="text-xs text-gray-500 mb-1 block">From</label>
           <input
             type="text"
             placeholder="Enter origin"
-            className="w-ful px-2 py-1 border-gray-200 rounded-lg focus:outline-none"
+            className="w-full px-2 py-1 border-gray-200 rounded-lg focus:outline-none"
           />
         </div>
         {/*swap btn, hidden on mobilee */}
@@ -33,37 +34,45 @@ const Input = ({ trip }) => {
             className="w-full px-2 py-1 rounded-lg focus:outline-none"
           />
         </div>
-        {/* depart date */}
-        <div className="border p-2 md:p-3 hover:border-black cursor-pointer rounded-xl border-gray-200 flex-1">
-          <label className="text-xs text-gray-500 mb-1 block">Depart</label>
-          <div className="flex justify-between px-3 gap-1">
-            <p className="py-1 text-center text-sm rounded-lg focus:outline-none">
-              Sat, 06 Dec 2025
-            </p>
-            <div className="flex">
-              <button className="p-1 rounded">
-                <ChevronLeft className="w-4 h-4 text-[#56cc1c]" />
-              </button>
-              <button className="p-1 rounded">
-                <ChevronRight className="w-4 h-4 text-[#56cc1c]" />
-              </button>
+        {/* overall div for both depart and return */}
+        <div className="md: border-gray-200 rounded-xl flex border">
+          {/* depart date */}
+          <div
+            className={`p-2 md:p-3 hover:border-black hover:border ${
+              trip === "round-trip" ? "hover:rounded-l-xl" : "rounded-xl"
+            } cursor-pointer border-gray-200 /*flex-1*/`}
+          >
+            <label className="text-xs text-gray-500 mb-1 block">Depart</label>
+            <div className="flex justify-between px-3 gap-1">
+              <p className="py-1 text-center text-sm rounded-lg focus:outline-none">
+                Sat, 06 Dec 2025
+              </p>
+              <div className="flex">
+                <button className="p-1 rounded">
+                  <ChevronLeft className="w-4 h-4 text-[#56cc1c]" />
+                </button>
+                <button className="p-1 rounded">
+                  <ChevronRight className="w-4 h-4 text-[#56cc1c]" />
+                </button>
+              </div>
             </div>
           </div>
-        </div>
-        {/* return date */}
-        <div
-          className={`border ${
-            trip === "round-trip" ? "block" : "hidden"
-          } p-3 rounded-xl hover:border-black cursor-pointer border-gray-200 flex-1`}
-        >
-          <label className="text-xs text-gray-500 mb-1 block">Return</label>
-          <input
-            type="text"
-            placeholder="Select return date"
-            className="w-full px-2 py-1 text-sm rounded-lg focus:outline-none"
-          />
+          {/* return date */}
+          <div
+            className={`border-l focus:outline-none ${
+              trip === "round-trip" ? "block" : "hidden"
+            } p-3 rounded- hover:border-black hover:border hover:rounded-r-xl cursor-pointer border-gray-200 /*flex-1*/`}
+          >
+            {/* <label className="text-xs text-gray-500 mb-1 block">Return</label> */}
+            <input
+              type="text"
+              placeholder="Return"
+              className="w-full px-2 py-1 mt-5 text-sm focus:outline-none"
+            />
+          </div>
         </div>
       </div>
+      {/* extra for multicity */}
       <div
         className={`${
           trip === "multi-city" ? "block" : "hidden"
@@ -75,7 +84,7 @@ const Input = ({ trip }) => {
           <input
             type="text"
             placeholder="Enter origin"
-            className="w-ful px-2 py-1 border-gray-200 rounded-lg focus:outline-none"
+            className="w-full px-2 py-1 border-gray-200 rounded-lg focus:outline-none"
           />
         </div>
 
@@ -97,7 +106,7 @@ const Input = ({ trip }) => {
         </div>
 
         {/* depart date */}
-        <div className="border p-2 md:p-3 hover:border-black cursor-pointer rounded-xl border-gray-200 flex-1">
+        <div className="border p-2 md:p-3 w-fit hover:border-black cursor-pointer rounded-xl border-gray-200">
           <label className="text-xs text-gray-500 mb-1 block">Depart</label>
           <div className="flex justify-between px-3 gap-1">
             <p className="py-1 text-center text-sm rounded-lg focus:outline-none">
