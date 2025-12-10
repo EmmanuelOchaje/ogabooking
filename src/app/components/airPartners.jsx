@@ -41,8 +41,8 @@ export default function AirPartners() {
   ];
 
   return (
-    <div className="py-8 md:py-12 lg:py-16 px-4 md:px-8 lg:px-40">
-      <div className="container mx-auto max-w-5xl">
+    <div className="py-8 md:py-12 lg:py-16 px-4 md:px-8 lg:px-30">
+      <div className="container mx-auto max-w-6xl">
         {/* airlines */}
         <div className="mb-5 lg:flex md:mb-10">
           <div className="mb-4 md:mb-6">

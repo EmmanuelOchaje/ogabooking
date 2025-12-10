@@ -31,7 +31,7 @@ export default function Stories() {
 
   return (
     <div className="bg-white py-4 md:py-12 lg:py-1">
-      <div className="container mx-auto px-4 max-w-5xl">
+      <div className="container mx-auto px-4 max-w-6xl">
         {/* header */}
         <div className="flex items-center justify-between mb-6 md:mb-5">
           <h2 className="text-lg md:text-xl font-bold text-gray-900">
@@ -51,7 +51,7 @@ export default function Stories() {
               className="bg-white rounded-2xl overflow-hidden shadow-sm cursor-pointer"
             >
               {/* image */}
-              <div className="relative h-48 md:h-56 lg:h-64 overflow-hidden">
+              <div className="relative h-48 md:h-38 lg:h-50 overflow-hidden">
                 <img
                   src={story.image}
                   alt={story.title}

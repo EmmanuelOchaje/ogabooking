@@ -10,7 +10,7 @@ import Input from "./input";
 const TripSelector = () => {
   const [trip, setTrip] = useState("one-way");
   return (
-    <div className="bg-white p-4 mx-auto md:p-8 lg:p-10 pb-5 lg:w-5xl md:w-fit md:rounded-xl">
+    <div className="bg-white p-4 mx-auto md:p-6 lg:p-4 pb-5 lg:w-5xl md:w-fit md:rounded-xl">
       {/* trip type */}
       <div className="flex gap-1 mb-4 overflow-x-auto">
         <button
@@ -58,32 +58,32 @@ const TripSelector = () => {
           <label className="flex items-center gap-1 cursor-pointer">
             <input
               type="checkbox"
-              className="w-4 h-4 rounded mx-1 border-gray-300"
+              className="w-4 h-4 cursor-pointer rounded mx-1 border-gray-300"
             />
             <span className="text-sm text-gray-700">Direct flights only</span>
           </label>
         </div>
 
         {/* dropdowns  */}
-        <div className="flex flex-col md:flex-row items-stretch md:items-center gap-3">
-          <select className="px-4 py-2 border text-sm border-gray-200 rounded-lg focus:outline-none">
+        <div className="flex flex-col cursor-pointer md:flex-row items-stretch md:items-center gap-3">
+          <select className="px-2 py-2 hover:bg-gray-100 hover:rounded-lg focus:outline-none">
             <option>1 Adult</option>
             <option>2 Adults</option>
             <option>3 Adults</option>
           </select>
 
-          <select className="px-4 py-2 text-sm border border-gray-200 rounded-lg focus:outline-none">
+          <select className="px-4 py-2 hover:bg-gray-100 hover:rounded-lg cursor-pointer text-sm focus:outline-none">
             <option>Economy</option>
             <option>Premium Economy</option>
             <option>Business</option>
             <option>First Class</option>
           </select>
 
-          <select className="px-4 py-2 border text-sm border-gray-200 rounded-lg focus:outline-none">
+          <select className="px-4 py-2 hover:bg-gray-100 hover:rounded-lg cursor-pointer  text-sm focus:outline-none">
             <option>2 Payment Types</option>
           </select>
 
-          <button className="px-6 text-sm py-2 bg-lime-500 text-white rounded-full font-semibold flex items-center justify-center gap-2 transition-colors shadow-lg">
+          <button className="px-6 text-sm cursor-pointer py-2 bg-lime-500 hover:bg-lime-600 text-white rounded-full font-semibold flex items-center justify-center gap-2 transition-colors shadow-lg">
             <Search className="w-5 h-5" />
             Search
           </button>

@@ -6,8 +6,8 @@ import esim from "../../images/esim.png";
 
 const Status = () => {
   return (
-    <div className="w-full flex font-geist justify-center pt-5 mx-auto relative">
-      <div className="flex absolute bg-white rounded-xl px-5 border border-gray-300">
+    <div className="w-full flex font-geist justify-center mx-auto relative">
+      <div className="flex absolute bg-white rounded-xl -top-5 px-5 border border-gray-300">
         <button className="border-r border-r-gray-300 px-2 md:px-3 py-2 text-sm font-medium flex items-center gap-2">
           <div className="w-5 h-5 bg-lime-500 rounded-full flex items-center justify-center">
             <span className="text-white text-xs">

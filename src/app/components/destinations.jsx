@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from "react";
 
 export default function Destinations() {
@@ -88,7 +89,7 @@ export default function Destinations() {
   ];
 
   return (
-    <div className="bg-white py-4 md:py-12 lg:py-10 px-4 md:px-5 lg:px-40">
+    <div className="bg-white py-4 md:py-12 lg:py-10 px-4 md:px-5 lg:px-30">
       <div className="container mx-auto max-w-7xl">
         {/* header */}
         <h2 className="text-md md:text-lg lg:text-2xl font-bold text-gray-900 mb-3 md:mb-6">

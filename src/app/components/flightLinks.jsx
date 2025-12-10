@@ -41,7 +41,7 @@ export default function FlightLinks() {
   ];
 
   return (
-    <div className="py-5 md:py-12 lg:py-10 px-4 md:px-5 lg:px-40">
+    <div className="py-5 md:py-12 lg:py-10 px-4 md:px-5 lg:px-30">
       <div className="container mx-auto max-w-7xl">
         {/* Flights To Top Cities from Nigeria */}
         <div className="mb-8 md:mb-10 lg:mb-12">

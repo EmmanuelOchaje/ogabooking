@@ -10,12 +10,14 @@ import Download from "./components/download";
 import FlightLinks from "./components/flightLinks";
 import Footer from "./components/footer";
 import Destinations from "./components/destinations";
+import Status from "./components/status";
 
 export default function Home() {
   return (
     <div className="font-geist">
       <Navbar />
       <Hero />
+      <Status />
       <Features />
       <Stories />
       <AirPartners />

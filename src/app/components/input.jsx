@@ -11,7 +11,7 @@ const Input = ({ trip }) => {
     <div>
       <div className="flex flex-col md:flex-row gap-3 mb-2">
         {/* from */}
-        <div className="p-2 md:p-3 rounded-xl w-fit hover:border-black cursor-pointer border-gray-100 border relative flex-1">
+        <div className="p-2 md:p-3 rounded-xl w-fit hover:border-gray-500 cursor-pointer border-gray-100 border relative flex-1">
           <label className="text-xs text-gray-500 mb-1 block">From</label>
           <input
             type="text"
@@ -26,7 +26,7 @@ const Input = ({ trip }) => {
           </button>
         </div>
         {/* to */}
-        <div className="border rounded-xl hover:border-black cursor-pointer border-gray-200 p-2 md:p-3 flex-1">
+        <div className="border rounded-xl hover:border-gray-500 cursor-pointer border-gray-200 p-2 md:p-3 flex-1">
           <label className="text-xs text-gray-500 mb-1 block">To</label>
           <input
             type="text"
@@ -38,7 +38,7 @@ const Input = ({ trip }) => {
         <div className="md: border-gray-200 rounded-xl flex border">
           {/* depart date */}
           <div
-            className={`p-2 md:p-3 hover:border-black hover:border ${
+            className={`p-2 md:p-3 hover:border-gray-500 hover:border ${
               trip === "round-trip" ? "hover:rounded-l-xl" : "rounded-xl"
             } cursor-pointer border-gray-200 /*flex-1*/`}
           >
@@ -61,7 +61,7 @@ const Input = ({ trip }) => {
           <div
             className={`border-l focus:outline-none ${
               trip === "round-trip" ? "block" : "hidden"
-            } p-3 rounded- hover:border-black hover:border hover:rounded-r-xl cursor-pointer border-gray-200 /*flex-1*/`}
+            } p-3 rounded- hover:border-gray-500 hover:border hover:rounded-r-xl cursor-pointer border-gray-200 /*flex-1*/`}
           >
             {/* <label className="text-xs text-gray-500 mb-1 block">Return</label> */}
             <input
@@ -79,7 +79,7 @@ const Input = ({ trip }) => {
         } flex flex-col md:flex-row gap-3 mb-2`}
       >
         {/* from */}
-        <div className="p-2 md:p-3 rounded-xl hover:border-black cursor-pointer border-gray-100 border relative flex-1">
+        <div className="p-2 md:p-3 rounded-xl hover:border-gray-500 cursor-pointer border-gray-100 border relative flex-1">
           <label className="text-xs text-gray-500 mb-1 block">From</label>
           <input
             type="text"
@@ -96,7 +96,7 @@ const Input = ({ trip }) => {
         </div>
 
         {/* to */}
-        <div className="border rounded-xl hover:border-black cursor-pointer border-gray-200 p-2 md:p-3 flex-1">
+        <div className="border rounded-xl hover:border-gray-500 cursor-pointer border-gray-200 p-2 md:p-3 flex-1">
           <label className="text-xs text-gray-500 mb-1 block">To</label>
           <input
             type="text"
@@ -106,7 +106,7 @@ const Input = ({ trip }) => {
         </div>
 
         {/* depart date */}
-        <div className="border p-2 md:p-3 w-fit hover:border-black cursor-pointer rounded-xl border-gray-200">
+        <div className="border p-2 md:p-3 w-fit hover:border-gray-500 cursor-pointer rounded-xl border-gray-200">
           <label className="text-xs text-gray-500 mb-1 block">Depart</label>
           <div className="flex justify-between px-3 gap-1">
             <p className="py-1 text-center text-sm rounded-lg focus:outline-none">
@@ -127,7 +127,7 @@ const Input = ({ trip }) => {
         <div
           className={`border ${
             trip === "round-trip" ? "block" : "hidden"
-          } p-3 rounded-xl hover:border-black cursor-pointer border-gray-200 flex-1`}
+          } p-3 rounded-xl hover:border-gray-500 cursor-pointer border-gray-200 flex-1`}
         >
           <label className="text-xs text-gray-500 mb-1 block">Return</label>
           <input
