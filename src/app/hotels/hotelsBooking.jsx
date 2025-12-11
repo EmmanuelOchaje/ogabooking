@@ -10,7 +10,13 @@ import {
 const HotelBooking = ({}) => {
   return (
     <div className="bg-white flex flex-col w-5xl mx-auto p-5 rounded-xl">
-      <h1 className="my-3 font-medium">Where do you want to stay?</h1>
+      <div className="flex gap-2 items-center">
+        <input
+          type="checkbox"
+          className="p-40 cursor-pointer rounded border-gray-300"
+        />
+        <h1 className="my-3 font-medium">Where do you want to stay?</h1>
+      </div>
       <div className="flex flex-col md:flex-row gap-3 mb-2">
         {/* from */}
         <div className="p-2 rounded-xl w-fit hover:border-black cursor-pointer border-gray-100 border relative flex-">
@@ -24,11 +30,6 @@ const HotelBooking = ({}) => {
           />
         </div>
         {/*swap btn, hidden on mobilee */}
-        <div className="hidden md:flex items-end justify-center pb-5">
-          <button className="p-2 cursor-pointer border border-gray-100 rounded-full">
-            <ArrowLeftRight className="w-5 h-5 text-gray-400" />
-          </button>
-        </div>
         {/* overall div for both depart and return */}
         <div className="md: border-gray-200 rounded-xl flex border">
           {/* depart date */}
@@ -54,7 +55,7 @@ const HotelBooking = ({}) => {
           {/* return date */}
           <div
             className={`border-l focus:outline-none 
-              "block" "hidden" p-2 rounded- hover:border-black hover:border hover:rounded-r-xl cursor-pointer border-gray-200 /*flex-1*/`}
+              "block" "hidden" p-2 rounded- hover:border-black hover:border hover:rounded-r-xl cursor-pointer border-gray-200`}
           >
             <label className="text-xs text-gray-500 mb-1 block">
               Check Out
@@ -93,7 +94,7 @@ const HotelBooking = ({}) => {
               type="checkbox"
               className="w-4 h-4 cursor-pointer rounded mx-1 border-gray-300"
             />
-            <span className="text-sm text-gray-700">Direct flights only</span>
+            <span className="text-sm text-gray-700">Free cancellation</span>
           </label>
         </div>
 

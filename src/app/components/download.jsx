@@ -28,12 +28,12 @@ export default function Download() {
             <Image
               src={download}
               alt="ogabooking App"
-              className="w-64 md:w-80 lg:w-full h-auto object-contain"
+              className="w-64 md:w-80 lg:w-full h-full object-contain"
             />
           </div>
 
           {/* right */}
-          <div className="w-full lg:w-1/2 h-11/12 bg-[#fafafa] py-6 md:py-8 lg:py-11 px-6 md:px-8 lg:px-10">
+          <div className="w-full lg:w-1/2 h-11/12 bg-[#f1f1f1] py-6 md:py-8 lg:py-12.5 px-6 md:px-8 lg:px-10">
             <div className="mb-6">
               <h2 className="text-lg md:text-md lg:text-xl font-bold text-gray-900 mb-4 md:mb-6 leading-tight">
                 Unlock the Best Travel Deals in the Universe with the ogabooking

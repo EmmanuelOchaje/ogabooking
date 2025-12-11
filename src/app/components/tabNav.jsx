@@ -20,7 +20,6 @@ const TabNav = ({ clicked, setClicked }) => {
             } cursor-pointer`}
             onClick={() => {
               setClicked("flights");
-              // router.push("/flights");
             }}
           >
             <Image src={plane} className="w-4 h-4 md:w-5 md:h-5" alt="" />
@@ -33,7 +32,6 @@ const TabNav = ({ clicked, setClicked }) => {
             } cursor-pointer`}
             onClick={() => {
               setClicked("hotels");
-              // router.push("/hotels");
             }}
           >
             <Image src={hotel} className="w-4 h-4 md:w-5 md:h-5" alt="" />
@@ -48,7 +46,6 @@ const TabNav = ({ clicked, setClicked }) => {
             } cursor-pointer `}
             onClick={() => {
               setClicked("car-rentals");
-              // router.push("/car-rentals");
             }}
           >
             <Image src={car} className="w-4 h-4 md:w-5 md:h-5" alt="" />

@@ -50,8 +50,8 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-black md:px-40 text-white">
-      <div className="container mx-auto px-4 py-12 max-w-7xl">
+    <footer className="bg-black md:px-20 text-white">
+      <div className="container mx-auto px-4 py-12 max-w-6xl">
         {/* Main Footer Content */}
         <div className="grid grid-cols-3 md:grid-cols-2 lg:grid-cols-4 gap-4 justify-center mb-12">
           {/* Company Column */}
