@@ -36,7 +36,7 @@ export default function CarRentalPartners() {
 
   return (
     <div className="w-full max-w-7xl mx-auto px-20 pt-15">
-      {/* Partners Section */}
+      {/* partners */}
       <div className="mb-16">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           <div className="lg:col-span-3">
