@@ -76,7 +76,7 @@ export default function Destinations() {
       country: "Oman",
       price: "936,333",
       image:
-        "https://images.unsplash.com/photo-1591608971362-f08b2a75731a?q=80&w=800",
+        "https://images.unsplash.com/photo-1529079875474-0a66a1f176d0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8amVydXNhbGVtfGVufDB8fDB8fHwwx",
     },
     {
       id: 9,
@@ -118,30 +118,30 @@ export default function Destinations() {
           {destinations.map((destination) => (
             <div
               key={destination.id}
-              className="bg-white rounded-2xl overflow-hidden shadow-md cursor-pointer border border-gray-100"
+              className="bg-white flex rounded-2xl overflow-hidden shadow-md cursor-pointer"
             >
               {/* image */}
-              <div className="relative h-48 md:h-56 overflow-hidden">
+              <div className="relative w-[50% overflow-hidden">
                 <img
                   src={destination.image}
                   alt={destination.name}
-                  className="w-full h-full object-cover"
+                  className="w-[150px] full h-[150px] object-cover"
                 />
               </div>
 
               {/* content */}
-              <div className="p-4 md:p-5">
-                <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-1">
+              <div className="p-3">
+                <h3 className="text-lg md:text-md font-bold text-gray-900 mb-1">
                   {destination.name}
                 </h3>
-                <p className="text-xs md:text-sm text-gray-600 mb-3">
+                <p className="text-xs md:text-sm text-gray-600 mb-7">
                   {destination.country}
                 </p>
 
                 {/* price */}
                 <div>
-                  <p className="text-xs text-gray-500 mb-1">Round-trip from</p>
-                  <p className="text-lg md:text-xl font-bold text-gray-900">
+                  <p className="text-xs text-gray-500">Round-trip from</p>
+                  <p className="text-lg md:text-md font-bold text-gray-900">
                     {destination.price}
                     <span className="text-sm font-normal">₦</span>
                   </p>

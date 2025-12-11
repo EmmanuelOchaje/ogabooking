@@ -10,6 +10,7 @@ import {
 const HotelBooking = ({}) => {
   return (
     <div className="bg-white flex flex-col w-5xl mx-auto p-5 rounded-xl">
+      <h1 className="my-3 font-medium">Where do you want to stay?</h1>
       <div className="flex flex-col md:flex-row gap-3 mb-2">
         {/* from */}
         <div className="p-2 rounded-xl w-fit hover:border-black cursor-pointer border-gray-100 border relative flex-">
